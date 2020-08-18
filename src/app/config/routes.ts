@@ -6,6 +6,11 @@ export default [
   {
     path: '',
     loadChildren: () =>
-      import('../layouts/main/main.module').then((m) => m.MainModule),
+      import('../pages/pages.module').then((m) => m.PagesModule),
   },
+  // {
+  //   path: '',
+  //   loadChildren: () =>
+  //     import('../layouts/main/main.module').then((m) => m.MainModule),
+  // },
 ];

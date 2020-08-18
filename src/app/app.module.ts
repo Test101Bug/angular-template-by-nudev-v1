@@ -5,10 +5,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
 import { LoginComponent } from './layouts/login/login.component';
+import { MainComponent } from './layouts/main/main.component';
 import { ComponentsModule } from './components/components.module';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent, MainComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
