@@ -1,3 +1,4 @@
+import { MainComponent } from './../layouts/main/main.component';
 import { LoginComponent } from '../layouts/login/login.component';
 
 export default [
@@ -5,6 +6,7 @@ export default [
   { path: 'login', component: LoginComponent },
   {
     path: '',
+    component: MainComponent,
     loadChildren: () =>
       import('../pages/pages.module').then((m) => m.PagesModule),
   },
