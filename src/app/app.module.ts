@@ -4,12 +4,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
-import { MainComponent } from './layouts/main/main.component';
-import { LoginComponent } from './pages/login/login.component';
+import { LoginComponent } from './layouts/login/login.component';
 import { ComponentsModule } from './components/components.module';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, LoginComponent],
+  declarations: [AppComponent, LoginComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
