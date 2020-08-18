@@ -1,9 +1,45 @@
+mat-card {
+  width: 90%;
+  height: 90%;
+  background-color: whitesmoke !important;
+}
+
 mat-form-field {
-  width: 100%;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+mat-grid-tile {
+  background: #262930;
+}
+
+mat-divider {
+  background-color: #fad131;
+  width: 90% !important;
+  height: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+section {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+button {
+  background-color: #fad131;
+  // color: #fff;
+  width: 90% !important;
+  height: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 2%;
 }
 
 .bg {
-  background-color: #f26e23;
+  background-color: #262930;
 
   background-size: cover;
   position: fixed;

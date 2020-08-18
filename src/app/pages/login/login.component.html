@@ -1,1 +1,51 @@
-<div class="bg"></div>
+<div class="bg">
+  <mat-grid-list cols="5" rowHeight="2:1">
+    <mat-grid-tile [colspan]="5"></mat-grid-tile>
+
+    <!-- new line -->
+    <mat-grid-tile [colspan]="1"></mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="3">
+      <mat-card>
+        <mat-card-header style="margin-top: 5%;">
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-icon>input</mat-icon>
+          <mat-card-title style="font-size: 28px;">Login</mat-card-title>
+        </mat-card-header>
+        <mat-divider></mat-divider>
+        <mat-card-content style="margin-top: 5%;">
+          <form class="example-form">
+            <mat-form-field appearance="outline">
+              <mat-label>Username</mat-label>
+              <input matInput placeholder="Username" />
+              <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+              <mat-label>Password</mat-label>
+              <input matInput placeholder="Password" />
+              <mat-icon matSuffix>vpn_key</mat-icon>
+            </mat-form-field>
+
+            <section class="example-section">
+              <mat-checkbox class="example-margin">จดจำรหัสผ่าน</mat-checkbox>
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                style="color: #000; margin-left: 75%;"
+              >
+                <mat-label>ลืมรหัสผ่าน</mat-label>
+              </a>
+            </section>
+          </form>
+
+          <button mat-raised-button>
+            <mat-icon>input</mat-icon>
+            เข้าสู่ระบบ
+          </button>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1"></mat-grid-tile>
+    <!-- end line -->
+  </mat-grid-list>
+</div>
