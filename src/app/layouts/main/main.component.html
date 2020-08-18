@@ -3,8 +3,11 @@
     <div class="drawer-nav-content"></div>
   </mat-drawer>
   <mat-drawer-content>
-    <div [class]="['container-fluid', 'h-100', 'drawer-content', 'mt-3']">
-      <div class="d-flex flex-row justify-content-between align-items-center">
+    <div class="d-flex  flex-column  h-100 drawer-content pt-3">
+      <div
+        class="d-flex flex-row justify-content-between align-items-center"
+
+      >
         <div class="d-flex">
           <button
             [class]="[drawer.opened ? 'ml-3' : 'ml-2']"
@@ -16,10 +19,19 @@
             <mat-icon>{{ drawer.opened ? "view_quilt" : "menu" }}</mat-icon>
           </button>
         </div>
-        <div class="d-flex flex-row align-items-center" >
-          <mat-icon class="mx-2" matBadge="15" matBadgeColor="warn" style="color: white;">notifications</mat-icon>
+        <div class="d-flex flex-row align-items-center">
+          <mat-icon
+            class="mx-2"
+            matBadge="15"
+            matBadgeColor="warn"
+            style="color: white;"
+            >notifications</mat-icon
+          >
           <mat-icon class="mx-2" style="color: white;">person</mat-icon>
         </div>
+      </div>
+      <div class="d-flex flex-row h-100 p-3">
+        <router-outlet></router-outlet>
       </div>
     </div>
   </mat-drawer-content>
