@@ -26,19 +26,22 @@
               <mat-icon matSuffix>vpn_key</mat-icon>
             </mat-form-field>
 
-           <div class="d-flex flex-row justify-content-between">
-            <mat-checkbox class="example-margin">จดจำรหัสผ่าน</mat-checkbox>
-            <a
-              href="https://www.google.com/"
-              target="_blank"
-              style="color: #000;"
+            <div
+              class="d-flex flex-row justify-content-between"
+              style="margin-left: 5%; margin-right: 5%;"
             >
-              <mat-label>ลืมรหัสผ่าน</mat-label>
-            </a>
-           </div>
+              <mat-checkbox class="example-margin">จดจำรหัสผ่าน</mat-checkbox>
+              <a
+                href="https://www.google.com/"
+                target="_blank"
+                style="color: #000;"
+              >
+                <mat-label>ลืมรหัสผ่าน</mat-label>
+              </a>
+            </div>
           </form>
 
-          <button mat-raised-button>
+          <button mat-raised-button (click)="login()">
             <mat-icon>input</mat-icon>
             เข้าสู่ระบบ
           </button>
