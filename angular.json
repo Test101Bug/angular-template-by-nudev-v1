@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "americano-cold"
+    }
+  },
+  "defaultProject": "americano-cold",
+  "cli": {
+    "analytics": false
+  }
 }
