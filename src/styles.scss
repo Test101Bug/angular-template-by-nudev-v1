@@ -31,33 +31,3 @@ body {
 *:focus {
   outline: 0 !important;
 }
-.sidenav-container {
-  background-color: #191919;
-  -webkit-box-shadow: 1px 0px 14px 0px rgba(66,70,77,1);
-  -moz-box-shadow: 1px 0px 14px 0px rgba(66,70,77,1);
-  box-shadow: 1px 0px 14px 0px rgba(66,70,77,1);
-}
-mat-drawer-content {
-  height: 100vh !important;
-  background-color: #272a30;
-}
-
-.drawer-nav-content {
-  display: flex;
-  flex-direction: column;
-  width: 15vw;
-}
-.drawer-content{
-
-}
-
-
-.menu-item{
-background-color: red;
-}
-
-.banner-title{
-  color: #ffffff;
-  text-align: center;
-  font-size: 20px;
-}

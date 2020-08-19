@@ -5,15 +5,23 @@ import Menu from '../../config/memu';
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  styleUrls: ['./main.component.scss'],
 })
 export class MainComponent implements OnInit {
-  @ViewChild(MatDrawer) public drawer: MatDrawer
+  @ViewChild(MatDrawer) public drawer: MatDrawer;
   showFiller = false;
-   listMenu = Menu;
-  constructor() { }
+  menuItemIndex: number = 0;
+  supItemIndex: number = 0;
+  listMenu = Menu;
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+  selectMenuItem(index) {
+    if (this.menuItemIndex != index) this.supItemIndex = 0;
+    this.menuItemIndex = index;
   }
 
+  selectSupMenuItem(index) {
+    if (this.supItemIndex != index) this.supItemIndex = index;
+  }
 }
