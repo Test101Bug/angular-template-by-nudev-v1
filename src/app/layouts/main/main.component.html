@@ -15,7 +15,7 @@
           class="d-flex flex-column menu-item-conatiner"
         >
           <div
-            (click)="selectMenuItem(rootMenuItemIndex)"
+            (click)="selectMenuItem(rootMenuItemIndex);"
             [class]="{
               'menu-item': true,
               'd-flex': true,
@@ -35,10 +35,10 @@
           </div>
           <div
             *ngIf="
-              item.children != null &&
-              item.children != undefined &&
+              item.children&&
               item.children.length > 0 &&
-              menuItemIndex == rootMenuItemIndex
+              menuItemIndex == rootMenuItemIndex &&
+              showSupMenu
             "
             class="sup-item-menu-container ml-2"
           >
@@ -46,7 +46,7 @@
               *ngFor="let childItem of item.children; let childIndex = index"
               [class]="{
                 'sup-item': true,
-                'p-2':true
+                'p-2': true
               }"
               (click)="selectSupMenuItem(childIndex)"
             >

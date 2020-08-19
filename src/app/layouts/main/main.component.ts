@@ -13,11 +13,16 @@ export class MainComponent implements OnInit {
   menuItemIndex: number = 0;
   supItemIndex: number = 0;
   listMenu = Menu;
+  showSupMenu = true;
   constructor() {}
 
   ngOnInit(): void {}
   selectMenuItem(index) {
-    if (this.menuItemIndex != index) this.supItemIndex = 0;
+    if (this.menuItemIndex != index) {
+      this.supItemIndex = 0;
+      this.showSupMenu = false;
+    }
+    this.showSupMenu = !this.showSupMenu;
     this.menuItemIndex = index;
   }
 
